@@ -34,6 +34,22 @@ This repo contains:
 - **Ready to deploy** to **GitHub Pages** or **Netlify** with minimal configuration  
 - Designed for easy forking and adaptation – start with this and make it your own!
 
+Here's what the project file structure looks like:
+
+```
+steal-this-site/
+├── src/                  # Site code (Astro pages & React components)
+│   ├── pages/
+│   ├── components/
+│   └── styles/
+├── docs/                 # Project documentation in AsciiDoc
+├── public/               # Static assets
+├── netlify.toml          # Optional Netlify config
+├── package.json          # Project dependencies
+├── README.md             # This file
+└── LICENSE               # MIT License
+```
+
 --- 
 
 ## Some Terminal Advice
@@ -115,29 +131,27 @@ This workflow—cloning the code, running it locally, and deploying it to Netlif
 
 Here’s how these steps fit together:
 
-+-----------------------+
-| 1. Clone the repo     |
-| git clone ...         |
-+-----------+-----------+
-            |
-            v
-+-----------------------+
-| 2. Install dependencies|
-| pnpm install          |
-+-----------+-----------+
-            |
-            v
-+-----------------------+
-| 3. Run locally        |
-| pnpm dev              |
-+-----------+-----------+
-            |
-            v
-+-----------------------+
-| 4. Deploy to Netlify  |
-| Push to GitHub        |
-| Connect to Netlify    |
-+-----------------------+
+```
+1. Clone the repo
+   git clone ...
+
+       ↓
+
+2. Install dependencies
+   pnpm install
+
+       ↓
+
+3. Run locally
+   pnpm dev
+
+       ↓
+
+4. Deploy
+   Push to GitHub
+   Connect to Netlify / GitHub Pages
+```
+
 
 
 ---
