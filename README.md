@@ -92,6 +92,12 @@ To complete this project, you'll need the following:
 
 ---
 
+## Why this workflow matters
+
+This workflow—cloning the code, running it locally, and deploying it to Netlify—mirrors how real-world development and deployment work. It’s a simple but powerful process that lets you test and tweak your changes safely before sharing them with the world. By following these steps, you’re not just setting up a personal site—you’re learning the same process used by professional developers every day.
+
+---
+
 ## Getting Started
 
 1. Clone the Repo
@@ -106,6 +112,33 @@ To complete this project, you'll need the following:
 
 4. Deploy
    See detailed instructions in docs/deployment.adoc for GitHub Pages and Netlify deployment.
+
+Here’s how these steps fit together:
+
++-----------------------+
+| 1. Clone the repo     |
+| git clone ...         |
++-----------+-----------+
+            |
+            v
++-----------------------+
+| 2. Install dependencies|
+| pnpm install          |
++-----------+-----------+
+            |
+            v
++-----------------------+
+| 3. Run locally        |
+| pnpm dev              |
++-----------+-----------+
+            |
+            v
++-----------------------+
+| 4. Deploy to Netlify  |
+| Push to GitHub        |
+| Connect to Netlify    |
++-----------------------+
+
 
 ---
 
