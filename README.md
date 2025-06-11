@@ -47,10 +47,10 @@ You'll be using the terminal to:
 - Deploy your code to platforms like **GitHub Pages** or **Neflify**
 
 **Mac/Linux users** – You’re probably already familiar with the terminal (Terminal.app, iTerm, etc.).  
-**Windows users** – We recommend using **Windows Subsystem for Linux (WSL)** for a smoother experience.  
 
-👉 [Here’s a quick guide to installing WSL](https://learn.microsoft.com/en-us/windows/wsl/install).
+**Windows users** – We recommend using **Windows Subsystem for Linux (WSL)** for a smoother experience. While it is possible to perform these tasks using **PowerShell** or **Command Prompt**, you'll have a much smoother experience if you choose to use WSL because it gives you a *real* Linux bottled environment inside of Windows where modern web tools (Astro, Node, etc.) work exactly as intended, without clunky workarounds.
 
+  [Here’s a quick guide to installing WSL](https://learn.microsoft.com/en-us/windows/wsl/install).
 
 ---
 
@@ -58,4 +58,81 @@ You'll be using the terminal to:
 
 To complete this project, you'll need the following:
 
-- **Visual Code Studio** - [VSCode](https://code.visualstudio.com/) is a powerful, user-friendly, and free code editor produced by Microsoft. It has a great community of developers who provide extentions for working with just about every programming language/framework/et cetera you can think of. If you think VSCode isn't for you, take a look at some alternatives and pick a code editor you vibe with the most. 
+- **Visual Code Studio** - [VSCode](https://code.visualstudio.com/) is a powerful, user-friendly, and free code editor produced by Microsoft. It has a great community of developers who provide extentions for working with just about every programming language/framework/et cetera you can think of. If you think VSCode isn't for you, take a look at some alternatives and pick a code editor you vibe with the most.
+
+- **Node.js** - The JavaScript runtime environment that powers Astro and React. Node allows you to run JavaScript tools like build scripts and servers outside of a browser. Whenever you install packages (see: pnpm), or run a development server, that's Node working in the background. Install guide: [Node.js](https://nodejs.org/).
+
+- **pnpm** - This project uses pnpm as its *package manager*, or, the tool that manages the *software libraries* our project depends on. "What's a software library?" Software libraries, also called *dependencies* are pre-written code meant to solve common problems like creating interactive user interfaces (**React**), page stying (**Tailwind CSS**), or building static webpages (**Astro**). Rather than writing all that code from scratch, modern developers can simply install these *building blocks* into your project and use them where and how you'd like.
+
+  The *package manager* is the tool that handles all that for you, it: 
+  - *Downloads* these libraries from the **npm registry** (a huge warehouse of open-source code)
+  - *Keeps track* of what versions your project uses so updates don't break anything
+  - *Organizes* these libraries in a folder called `node_modules/` so the developer doesn't have to worry about anything
+  - *Removes* those libraries cleanly when your done with them
+   
+    Later, when you run the command `pnpm install` in the terminal, you're telling the package manager to fetch all the libraries your project relies on. [Official pnpm Install Guide](https://pnpm.io/installation).
+
+- **Git** is an example of a *distributed version control system (VCS)*, created by Linus Torvalds (the creator of Linux) in 2005, it has become a *foundational technology* in software development. Basically, Git tracks changes in a code base by creating **commits** or *snapshots* that capture whatever changes that have been made since the last commit in what's called a **repository** or **repo** . If you make a change and it breaks your program, you can simply *revert* back to an earlier commit when everything was working properly. If you want to try something new, you can create a **branch** - a parallel version of your project - and **merge** those changes back into your main code later if desired. Install guide: [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+
+- **GitHub** is the cloud-based home for your Git repo. It’s built around Git but adds a powerful layer of tools for collaboration, discussion, and sharing.
+
+  GitHub:
+  - **Hosts your code**, allowing you to share your project with the world.
+  - **Tracks issues**, helping you manage bugs, tasks, and improvements.
+  - **Reviews changes**, enabling you to propose updates and collaborate with teammates through pull requests.
+  - **Deploys directly**, making it easy to publish your site with services like Netlify and GitHub Pages.
+
+  Joining GitHub means joining a larger world of developers—people who share, fork, remix, and collaborate to build better software together.
+
+  If you’re new to GitHub, it’s free to join and has tons of resources to help you get started: [GitHub Sign Up](https://github.com/).
+
+- The Terminal – Your command center, where you’ll run build commands and deploy your site.
+
+  💡 I personally use the built-in terminal in VSCode—it’s convenient and works the same across Mac, Linux, and Windows (with WSL).
+
+---
+
+## Getting Started
+
+1. Clone the Repo
+   git clone https://github.com/yourusername/steal-this-site.git
+   cd steal-this-site
+
+2. Install Dependencies
+   pnpm install
+
+3. Start the Dev Server
+   pnpm dev
+
+4. Deploy
+   See detailed instructions in docs/deployment.adoc for GitHub Pages and Netlify deployment.
+
+---
+
+## Docs-as-Code
+
+This project includes a /docs/ folder with project-specific documentation in AsciiDoc.  
+It covers usage instructions, customization tips, and deployment steps for this starter site.
+
+---
+
+## License
+
+This project is licensed under the MIT License – see the LICENSE file for details. Fork it, remix it, and make it your own!
+
+---
+
+## Let’s Collaborate
+
+Have ideas or want to suggest improvements?  
+- Open an issue  
+- Create a pull request  
+- Or just fork and remix it!
+
+---
+
+Happy hacking, and remember: this site is yours to steal, adapt, and grow.
+
+— Dom Caracappa
+
+
